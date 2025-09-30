@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="bubblegum-sans-regular">Calculator</div>
+    <div class="grid">
+        <div class="item1">
+            <input type="text" id="display" readonly placeholder="Calculator">
+        </div>
+        <div class="item2">
+            <button style="background-color:rgb(236, 236, 240)" onclick="empty()">AC</button>
+            <button style="background-color: rgb(236, 236, 240)" onclick="brackets()">()</button>
+            <button style="background-color: rgb(236, 236, 240)" onclick="input('%')">%</button>
+            <button style="background-color: rgb(236, 236, 240)" onclick="backspace()">C</button>
+        </div>
+        <div class="item3">
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button style="background-color: rgb(3, 2, 19); color: white;" onclick="input('/')">/</button>
+        </div>
+        <div class="item4">
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button style="background-color: rgb(3, 2, 19); color: white;" onclick="input('*')">*</button>
+        </div>
+        <div class="item5">
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button style="background-color: rgb(3, 2, 19); color: white;" onclick="input('+')">+</button>
+        </div>
+        <div class="item6">
+            <button onclick="input('.')">.</button>
+            <button onclick="input('0')">0</button>
+            <button style="background-color: rgb(3, 2, 19); color: white; font-weight: bold;" onclick="result()">=</button>
+            <button style="background-color: rgb(3, 2, 19); color: white;"onclick="input('-')">-</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

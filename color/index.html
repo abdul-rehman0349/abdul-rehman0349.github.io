@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* margin-top: 10vh; */
+        }
+        div{
+            width: 30vw;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            background-color: #ddd;
+        }
+        p{
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            color: white;
+            background-color: #333;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            height: 4vh;
+        }
+        button:hover{
+            background-color: #555;
+        }
+        #code{
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            p{
+                font-size: small;
+            }
+            div{
+                width: 50vw;
+            }
+        }
+    </style>
+</head>
+<body id="color">
+    <div>
+        <p>Random colour maker demo</p>
+        <button onclick="randomcolor()">Click here</button>
+        <p>The colour is: <span id="code"></span></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
